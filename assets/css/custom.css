@@ -20,3 +20,11 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #95a595;
 }
+
+.contact .info p a {
+    color: #173b6c;
+}
+
+.text-secondary {
+    color: #272829 !important;
+}
