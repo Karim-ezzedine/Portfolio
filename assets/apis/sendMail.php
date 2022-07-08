@@ -13,7 +13,7 @@
     $headers = "Organization: KarimEzzedine\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-type: text/plain; charset=utf-8\r\n";
-    $headers .= "From: ".$from . "\r\n";
+    $headers .= "From: ".$email . "\r\n";
     $headers .= "Reply-To: ".$to."\r\n";
     $headers .= "X-Priority: 3\r\n";
     $headers .= "X-Mailer: PHP". phpversion() ."\r\n";
