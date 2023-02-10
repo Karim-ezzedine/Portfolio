@@ -1,30 +1,143 @@
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+  background: #f1f1f1;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #a5b5a5;
-    border-radius: 4px;
-    -webkit-transition: color .4s;
-    transition: color .4s;
+  background: #a5b5a5;
+  border-radius: 4px;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #95a595;
+  background: #95a595;
 }
 
 .contact .info p a {
-    color: #173b6c;
+  color: #173b6c;
 }
 
 .text-secondary {
-    color: #272829 !important;
+  color: #272829 !important;
+}
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in 3s;
+  transition: all 0.5s ease-in 3s;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 30px;
+  left: calc(50% - 16px);
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #fff;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.scroll-down:before {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 6px);
+  transform: rotate(-45deg);
+  display: block;
+  width: 12px;
+  height: 12px;
+  content: "";
+  border: 2px solid white;
+  border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+
+.check-portfolio {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in 3s;
+  transition: all 0.5s ease-in 3s;
+}
+
+.check-portfolio {
+  position: absolute;
+  bottom: 25px;
+  width: 250px;
+  left: calc(50% - 125px);
+  display: block;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  text-align: center;
+  font-size: medium;
+}
+
+.check-portfolio a {
+  color: #f4f6fd;
+  text-decoration: none;
+}
+
+.scroll-down a {
+  color: #f4f6fd;
+  text-decoration: none;
+}
+
+.check-portfolio a:hover {
+  color: #37b3ed;
+  text-decoration: none;
+}
+
+.scroll-down:hover {
+  color: #37b3ed;
+  border: 2px solid #37b3ed;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  #hero .hero-container {
+    min-width: 400px;
+    max-width: 400px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  #hero .hero-container {
+    min-width: 320px;
+    max-width: 320px;
+  }
 }
