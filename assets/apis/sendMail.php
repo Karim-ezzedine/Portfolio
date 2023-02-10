@@ -7,7 +7,7 @@
     $email = $_POST['email'];
     $subject = $_POST['subject'];
     $message = "Name: $name\n" . "Email: $email\n\n" . $_POST['message'];
-    $to = "karim.ezz70@gmail.com";
+    $to = "karim.ezzedine1@gmail.com";
 
     // Mail Headers
     $headers = "Organization: KarimEzzedine\r\n";
